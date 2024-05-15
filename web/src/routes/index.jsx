@@ -19,10 +19,10 @@ export function Routes() {
     switch(user.role) {
       case USER_ROLE.ADMIN:
         return <AdminRoutes />
-      case USER_ROLE.SALE:
-        return <SaleRoutes />
-      case USER_ROLE.CUSTOMER:
-        return <CustomerRoutes />
+        case USER_ROLE.CUSTOMER:
+          return <CustomerRoutes />
+        case USER_ROLE.SALE:
+          return <SaleRoutes />
         default:
           return <CustomerRoutes />
     }
