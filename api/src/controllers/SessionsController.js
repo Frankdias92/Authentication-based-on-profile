@@ -27,9 +27,9 @@ class SessionsController {
       expiresIn
     });
 
-    response.cookie('token', token, {
+    response.cookie("token", token, {
       httpOnly: true,
-      sameSite: 'none',
+      sameSite: "none",
       secure: true,
       maxAge: 30 * 60 * 1000,
     })
